@@ -5,14 +5,47 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #EEF2F5;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Nav edits  */
+.nav-container {
+  display: flex;
+  background-color: #F6F5F5;
+  font-style: italic;
+  height: 70px;
+ align-items: center;
+ justify-content: space-around;
+ 
+}
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
 
-Navbar {
+.nav-contact {
+  display: flex;
+  margin: 0;
+}
+
+.P-icon {
+  color: #0014FF;
+  padding: 5px;
+}
+
+
+/* home edits */
+
+.Home-control {
+  width: 800px;
+  height: 800px;
+  background-color: blue;
   position: relative;
-  left: 20px;
+  margin: auto;
+  top: 50px
 }

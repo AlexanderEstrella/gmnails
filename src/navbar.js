@@ -1,25 +1,22 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-const Navbarset = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+const Navbar = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">Gm Nails</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#Services">Services</Nav.Link>
-            <Nav.Link href="#About">About</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="nav-container">
+      <nav className="nav-title">
+        <h1>GM Nails</h1>
+      </nav>
+      <ul className="nav-items">
+        <li>Home</li>
+        <li>Services</li>
+        <li>About</li>
+      </ul>
+      <nav className="nav-contact">
+        <FontAwesomeIcon className="P-icon" icon="fa-solid fa-phone" />
+        407-953-3540
+      </nav>
+    </nav>
   );
 };
 
-export default Navbarset;
+export default Navbar;

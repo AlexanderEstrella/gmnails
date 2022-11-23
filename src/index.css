@@ -22,6 +22,9 @@ code {
  justify-content: space-around;
  
 }
+.nav-title h1 {
+  font-size: 1.5em;
+}
 .nav-items {
   display: flex;
   list-style: none;
@@ -44,8 +47,33 @@ code {
 .Home-control {
   width: 800px;
   height: 800px;
-  background-color: blue;
-  position: relative;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  display:flex;
   margin: auto;
-  top: 50px
+  margin-top: 20px;
+  
+}
+
+
+.carousel {
+  margin: auto;
+  width: 600px;
+  height: 600px;
+  position: relative;
+}
+
+.Welcome {
+  height: 100px;
+  margin: 0 auto;
+}
+
+.BusinessOP {
+  position: relative;
+margin: 0 auto;
+bottom: 30px;
+font-size: 13px;
+font-style: italic;
 }

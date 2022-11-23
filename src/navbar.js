@@ -12,8 +12,9 @@ const Navbar = () => {
         <li>About</li>
       </ul>
       <nav className="nav-contact">
-        <FontAwesomeIcon className="P-icon" icon="fa-solid fa-phone" />
-        407-953-3540
+        <a href="407-953-3540">
+          <FontAwesomeIcon className="P-icon" icon="fa-solid fa-phone" />
+        </a>
       </nav>
     </nav>
   );

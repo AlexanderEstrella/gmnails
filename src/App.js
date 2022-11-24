@@ -3,7 +3,6 @@ import Layout from "./Pages/Layout";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
-
 const App = () => {
   return (
     <BrowserRouter>

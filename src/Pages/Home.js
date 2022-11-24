@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-
+import DATA from "../assets/images";
 const Home = () => {
   const [index, setIndex] = useState(0);
-
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
@@ -19,32 +18,13 @@ const Home = () => {
 
       <p className="BusinessAD">7335 W Sand Lake Rd, Orlando, FL 32819</p>
       <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://lh3.googleusercontent.com/p/AF1QipP3_NCiAnlpA4C0a89TKog-SQgnDIeiK8Y7c-IW=w1080-h608-p-no"
-            alt="First slide"
-          />
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
-            alt="Second slide"
-          />
-
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
-            alt="Third slide"
-          />
-
-          <Carousel.Caption></Carousel.Caption>
-        </Carousel.Item>
+        {DATA.map((img, index) => {
+          return (
+            <Carousel.Item key={DATA.id}>
+              <img className="d-block w-100" src={img.img} alt="First slide" />
+            </Carousel.Item>
+          );
+        })}
       </Carousel>
     </div>
   );

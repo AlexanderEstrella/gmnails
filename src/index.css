@@ -15,7 +15,7 @@ code {
 /* Nav edits  */
 .nav-container {
   display: flex;
-  background-color: #F6F5F5;
+  background-color: #F2F2F2;
   font-style: italic;
   height: 70px;
  align-items: center;
@@ -34,11 +34,6 @@ code {
 .nav-contact {
   display: flex;
   margin: 0;
-}
-
-.P-icon {
-  color: #0014FF;
-  padding: 5px;
 }
 
 
@@ -65,8 +60,14 @@ code {
   position: relative;
 }
 
+.Frontdetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
 .Welcome {
-  height: 100px;
+  height: 80px;
   margin: 0 auto;
 }
 
@@ -77,3 +78,17 @@ bottom: 30px;
 font-size: 13px;
 font-style: italic;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.BusinessAD {
+  position: relative;
+  margin: auto;
+  width: 200px;
+  bottom: 40px;
+  font-size: 15px;
+}
+

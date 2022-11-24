@@ -1,5 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/fontawesome-free-solid";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <nav className="nav-container">
@@ -7,13 +10,20 @@ const Navbar = () => {
         <h1>GM Nails</h1>
       </nav>
       <ul className="nav-items">
-        <li>Home</li>
-        <li>Services</li>
-        <li>About</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/services">Services</Link>
+        </li>
       </ul>
       <nav className="nav-contact">
-        <a href="407-953-3540">
-          <FontAwesomeIcon className="P-icon" icon="fa-solid fa-phone" />
+        <a href="tel:PHONE_NUM">
+          <FontAwesomeIcon icon={faPhone} />
+          407-953-3540
         </a>
       </nav>
     </nav>

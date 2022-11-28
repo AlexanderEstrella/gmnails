@@ -40,8 +40,7 @@ code {
 /* home edits */
 
 .Home-control {
-  width: 800px;
-  height: 800px;
+  width: auto;
   background-color: white;
   justify-content: center;
   text-align: center;
@@ -96,3 +95,30 @@ img {
   width: 400px;
   height: 500px;
 }
+
+.divider {
+  position: relative;
+  border: 1px solid;
+  width: 25%;
+  color:#F2F2F1;
+  margin: auto;
+  bottom: 40px;
+
+}
+
+
+  .Form-Container form {
+display: flex;
+flex-direction: column;
+width: 200px;
+  }
+
+
+  .btn {
+    display: flex;
+    margin: auto;
+    
+  }
+
+
+

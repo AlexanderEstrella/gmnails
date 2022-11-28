@@ -1,28 +1,28 @@
+import React from "react";
+import { Button } from "bootstrap";
 const Footer = () => {
   return (
-    <div className="container mt-5">
-      <h2 className="mb-3">React Contact Form Component Example</h2>
-      <form onSubmit={onSubmit}>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="name">
+    <div className="Form-Container">
+      <div></div>
+
+      <form>
+        <h2>Contact us</h2>
+        <div className="form-label">
+          <label className="Name-field" htmlFor="name">
             Name
           </label>
-          <input className="form-control" type="text" id="name" required />
+          <input className="form-control" type="text" />
         </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="email">
-            Email
-          </label>
-          <input className="form-control" type="email" id="email" required />
+        <div className="form-label">
+          <label className="Email-field">Email</label>
+          <input className="form-control" type="email" />
         </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="message">
-            Message
-          </label>
-          <textarea className="form-control" id="message" required />
+        <div className="form-label">
+          <label className="Message-label">Message</label>
+          <textarea className="form-control" />
         </div>
-        <button className="btn btn-danger" type="submit">
-          {formStatus}
+        <button className="btn btn-primary" type="submit">
+          Send
         </button>
       </form>
     </div>

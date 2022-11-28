@@ -15,8 +15,9 @@ const Home = () => {
           Hours Operation: Monday-Friday 10:00AM - 7:00 PM
         </p>
       </div>
-
+      <br></br>
       <p className="BusinessAD">7335 W Sand Lake Rd, Orlando, FL 32819</p>
+      <hr className="divider"></hr>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {DATA.map((img, index) => {
           return (

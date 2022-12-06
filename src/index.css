@@ -106,11 +106,15 @@ img {
 
 }
 
+.Form-Container {
+  display: flex;
+  justify-content: space-around;
+}
+
 
   .Form-Container form {
 display: flex;
 flex-direction: column;
-width: 200px;
   }
 
 
@@ -120,5 +124,11 @@ width: 200px;
     
   }
 
+
+iframe {
+  width:450;
+    height:250;
+    border:0;
+}
 
 

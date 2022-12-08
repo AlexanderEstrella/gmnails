@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "bootstrap";
+require('dotenv').config()
 
 function Goomaps() {
   return (

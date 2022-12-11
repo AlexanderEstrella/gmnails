@@ -1,11 +1,8 @@
 import React from "react";
 import { Button } from "bootstrap";
+import SimpleMap from "./googlemap";
 
-function Goomaps() {
-  return (
-    <iframe src="https://www.google.com/maps/embed/v1/MAP_MODE?key=AIzaSyCSMWu4Up-mMVStZjT4Jg6DGK7nv4sG0-w&center=-81.47981, 28.45111&zoom=18&maptype=satellite"></iframe>
-  );
-}
+console.log(process.env);
 const Footer = () => {
   return (
     <div className="Form-Container">
@@ -31,7 +28,7 @@ const Footer = () => {
       </form>
 
       <div className="gmaps">
-        <Goomaps />
+        <SimpleMap />
       </div>
     </div>
   );

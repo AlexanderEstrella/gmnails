@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "bootstrap";
-import SimpleMap from "./googlemap";
+import Map from "./googlemap";
 
 console.log(process.env);
 const Footer = () => {
@@ -28,7 +28,7 @@ const Footer = () => {
       </form>
 
       <div className="gmaps">
-        <SimpleMap />
+        <Map />
       </div>
     </div>
   );

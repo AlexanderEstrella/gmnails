@@ -131,4 +131,13 @@ iframe {
     border:0;
 }
 
+.map-container {
+  height: 400px;
+  width: 400px;
+  
+}
 
+Marker {
+  color: red;
+  background-color: red;
+}

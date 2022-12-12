@@ -109,12 +109,14 @@ img {
 .Form-Container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 
   .Form-Container form {
 display: flex;
 flex-direction: column;
+
   }
 
 
@@ -137,7 +139,25 @@ iframe {
   
 }
 
-Marker {
-  color: red;
-  background-color: red;
+.FbusinessCR {
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-style: italic;
 }
+
+.aboutmeContainer {
+  display: flex;
+  gap: 40px;
+  margin: auto;
+  padding: 10vh;
+}
+.aboutmeparagraph {
+display: flex;
+flex-direction: column;
+width: 400px;
+height: 200px;
+}
+

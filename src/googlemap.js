@@ -1,5 +1,7 @@
 import { React, useMemo } from "react";
-import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import { MarkerF } from "@react-google-maps/api";
+
 const Map = () => {
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: process.env.REACT_APP_API_KEY,
@@ -26,7 +28,11 @@ const Map = () => {
       center={center}
       mapContainerClassName="map-container"
     >
-      <Marker onLoad={onLoad} position={{ center }} />
+      <MarkerF
+        onLoad={onLoad}
+        name="pin"
+        position={{ lat: 28.45098, lng: -81.4806 }}
+      />
     </GoogleMap>
   );
 };

@@ -2,7 +2,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/fontawesome-free-solid";
 import { Link } from "react-router-dom";
-
+const HandleClick = () => {
+  console.log("clicked");
+};
 const Navbar = () => {
   return (
     <nav className="nav-container">
@@ -26,6 +28,9 @@ const Navbar = () => {
           407-953-3540
         </a>
       </nav>
+      <button onClick={HandleClick}>
+        <FontAwesomeIcon icon="fa-regular fa-bars" />
+      </button>
     </nav>
   );
 };

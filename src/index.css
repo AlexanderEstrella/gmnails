@@ -161,3 +161,23 @@ width: 400px;
 height: 200px;
 }
 
+@media (max-width: 768px) {
+  .nav-container {
+    display: none;
+  }
+}
+
+.Pricing-table {
+display: flex;
+margin: auto;
+flex-direction: row;
+justify-content: space-evenly;
+gap: 10px;
+margin: 200px;
+}
+
+.Pricing-table li {
+  list-style: none;
+  font-weight: 300;
+  font-size: 20px;
+}

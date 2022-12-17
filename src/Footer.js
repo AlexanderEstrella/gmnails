@@ -13,7 +13,7 @@ const Footer = () => {
         </li>
         <li>7335 West Sand Lake Rd</li>
         <li>Orlando, FL 32819</li>
-        <li>(407) 953-3540</li>
+        <li>T: (407) 953-3540</li>
       </ul>
 
       <div className="gmaps">

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/fontawesome-free-solid";
 import { Link } from "react-router-dom";
+import { faBars } from "@fortawesome/fontawesome-free-solid";
+
 const HandleClick = () => {
+  const [active, setActive] = useState(false);
   console.log("clicked");
 };
 const Navbar = () => {
@@ -28,8 +32,8 @@ const Navbar = () => {
           407-953-3540
         </a>
       </nav>
-      <button onClick={HandleClick}>
-        <FontAwesomeIcon icon="fa-regular fa-bars" />
+      <button className="hamburger" onClick={HandleClick}>
+        <FontAwesomeIcon icon="fa-solid fa-bars" />
       </button>
     </nav>
   );

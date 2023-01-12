@@ -7,7 +7,6 @@ import { faBars } from "@fortawesome/fontawesome-free-solid";
 
 const HandleClick = () => {
   const [active, setActive] = useState(false);
-  console.log("clicked");
 };
 const Navbar = () => {
   return (

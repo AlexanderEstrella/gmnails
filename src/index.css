@@ -166,40 +166,93 @@ width: 400px;
 height: 200px;
 }
 
-@media (max-width: 768px) {
-  .nav-container {
-    display: none;
-  }
-
-.Form-Container {
-  display: flex;
-  flex-direction: column;
-}
-
-.carousel {
-  margin: auto;
-  width: 400px;
-  height: 400px;
-}
-
-.Home-control {
-  display: flex;
-  flex-wrap: wrap;
-
-}
-}
-
 .Pricing-table {
-display: flex;
-margin: auto;
-flex-direction: row;
-justify-content: space-evenly;
-gap: 10px;
-margin: 200px;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 200px;
 }
 
 .Pricing-table li {
   list-style: none;
   font-weight: 300;
   font-size: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+.hamburger {
+  display: unset;
+}
+
+.nav-items {
+    margin: 0 auto;
+position: relative;
+flex-direction: column;
+left: 150px;
+top: 100px;
+
+}
+ul li {
+  padding: 10px;
+}
+.nav-container {
+    margin: 0 auto;
+  padding: 40px;
+  padding-bottom: 200px;
+}
+
+  .nav-contact {
+      
+  position: relative;
+  top: 200px;
+  }
+
+.Form-Container {
+    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+padding: 100px;
+gap:40px;
+}
+
+.carousel {
+  margin: 0 auto;
+  width: 400px;
+  height: 600px;
+
+}
+
+.Home-control {
+    margin: 0 auto;
+  justify-self: center;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.aboutmeContainer {
+  margin: 0 auto;
+  width: 400px;
+  flex-wrap: wrap;
+  height: 100em;
+  justify-content: center;
+  gap:  40em;
+}
+
+.aboutmeparagraph {
+    display: unset;
+      width: none;
+
+}
+img {
+  display: block;
+  width: 300px;
+  top: 200px;
+}
 }

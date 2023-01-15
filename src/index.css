@@ -23,19 +23,26 @@ code {
   align-items: center;
   justify-content: space-around;
 }
+
 .nav-title h1 {
+  display: block;
   font-size: 1.5em;
 }
-.nav-items {
+.nav-body {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   list-style: none;
   gap: 20px;
 }
 
-.nav-contact {
+.Nav-item {
   display: flex;
-  margin: 0;
+  font-weight: 400;
+  padding: 10px;
+  color: black;
 }
+
 .hamburger {
 display: none;
 }
@@ -171,24 +178,17 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  .hamburger {
-    display: unset;
-      position: absolute;
-      right: 25px;
-      cursor: pointer;
+/* Nav */
+    .nav-items {
+      display: none;
     }
 
-  .nav-items {
-    display: unset;
-    margin: 0 auto;
-    position: relative;
-    flex-direction: column;
-    left: 150px;
-    top: 100px;
+  .nav-body {
+    font-size: 0.8em;
+    justify-content: unsafe;
+  
   }
-.nav-links {
-  display: none;
-}
+    /* Home */
   .Form-Container {
     margin: 0 auto;
     display: flex;
@@ -203,6 +203,7 @@ iframe {
     height: 600px;
   }
 
+    /* About Us */
   .aboutmeContainer {
     margin: 0 auto;
     width: 400px;
@@ -221,7 +222,7 @@ iframe {
     width: 300px;
     top: 200px;
   }
-
+/* Services */
   .Pricing-table {
     margin: auto;
     flex-direction: column;

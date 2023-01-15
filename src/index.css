@@ -47,7 +47,7 @@ code {
 display: none;
 }
 
-/* Home edits */
+/* Home */
 
 .Home-control {
   width: auto;
@@ -161,7 +161,7 @@ iframe {
   width: 400px;
   height: 200px;
 }
-
+/* Servies */
 .Pricing-table {
   display: flex;
   margin: auto;

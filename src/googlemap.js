@@ -6,21 +6,21 @@ const Map = () => {
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: process.env.REACT_APP_API_KEY,
   });
-
+  // Business Location
   const center = useMemo(() => ({ lat: 28.45098, lng: -81.4806 }), []);
 
   const onLoad = (load) => {
     console.log("on ", load);
   };
-
+  // Map Controls
   const options = {
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: false,
   };
-
+  // If map does not load
   if (!isLoaded) return <div>Loading...</div>;
-
+  // presets of location
   return (
     <GoogleMap
       zoom={15}
@@ -31,6 +31,7 @@ const Map = () => {
       <MarkerF
         onLoad={onLoad}
         name="pin"
+        // Pin Location on map
         position={{ lat: 28.45098, lng: -81.4806 }}
       />
     </GoogleMap>

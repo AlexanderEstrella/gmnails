@@ -1,10 +1,9 @@
 import React from "react";
 import { Button } from "bootstrap";
-import Map from "./googlemap";
-import ContactComponent from "./contactComponent/ContactComponent";
+import Map from "./API/googlemap";
+import ContactComponent from "./Contact/ContactComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fainstagram } from "@fortawesome/free-brands-svg-icons";
-console.log(process.env);
 const Footer = () => {
   return (
     <div className="Form-Container">
@@ -21,9 +20,9 @@ const Footer = () => {
         <Map />
       </div>
 
-      <form>
+      <div>
         <ContactComponent />
-      </form>
+      </div>
     </div>
   );
 };

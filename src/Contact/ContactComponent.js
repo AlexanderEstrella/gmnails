@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function ContactComponent() {
+  const [unset, setUnset] = useState(true);
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -45,9 +46,16 @@ function ContactComponent() {
         <label className="Message-label">Message</label>
         <textarea className="form-control" name="user_name" required />
       </div>
-      <button className="btn btn-primary" type="submit">
+      <button
+        className="btn btn-primary"
+        type="submit"
+        onClick={() => setUnset(!unset)}
+      >
         Send
       </button>
+      <div className={unset ? "Contactusmessage" : "Contactusvisible"}>
+        <p>Your message has been sent!</p>
+      </div>
     </form>
   );
 }

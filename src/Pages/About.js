@@ -24,7 +24,7 @@ const About = () => {
       </div>
 
       <div className="aboutmeimage">
-        <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.18172-8/10835223_650482565079703_2679194063235854890_o.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=RtZCBf5PjHEAX-2XKjq&_nc_ht=scontent-atl3-1.xx&oh=00_AfAbB7w_RkWdcbmH8SQ9udoW3fQj2EVd18CQLOcKdPOyIw&oe=63BF0CA0"></img>
+        <img src="/images/image/img15.jpg"></img>
       </div>
     </div>
   );

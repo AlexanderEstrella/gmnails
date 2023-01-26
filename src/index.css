@@ -127,6 +127,7 @@ img {
 .btn {
   display: flex;
   margin: auto;
+  margin-top: 20px;
 }
 
 iframe {
@@ -148,6 +149,7 @@ iframe {
   gap: 5px;
   font-style: italic;
 }
+
 /* ABout me */
 .aboutmeContainer {
   display: flex;
@@ -176,7 +178,13 @@ iframe {
   font-weight: 300;
   font-size: 20px;
 }
+.Contactusmessage {
+  display: none;
+}
 
+.Contactusvisible {
+  display: unset;
+}
 @media (max-width: 768px) {
 /* Nav */
     .nav-items {

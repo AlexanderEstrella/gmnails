@@ -185,7 +185,7 @@ iframe {
 .Contactusvisible {
   display: unset;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 /* Nav */
     .nav-items {
       display: none;

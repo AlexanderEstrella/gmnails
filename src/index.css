@@ -17,7 +17,7 @@ code {
 .nav-container {
   display: flex;
   position: fixed;
-  background-color: #f0e6e3;
+  background-color: #FFFFFF;
   font-style: italic;
   height: 70px;
   align-items: center;
@@ -32,7 +32,7 @@ code {
     cursor: pointer;
 }
 .nav-container a:hover {
-  color: #ef9273
+  color: #FF1493;
 }
 .nav-title h1 {
   display: block;
@@ -133,7 +133,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #F0DED0;
+  background-color: #FFFFFF;
 }
 
 .Form-Container form {
@@ -167,10 +167,19 @@ iframe {
   gap: 5px;
   font-style: italic;
 }
+
+
 .socials {
   display: flex;
-  gap:20px;
-  font-size: 1.3em;
+    gap: 20px;
+    font-size: 1.3em;
+}
+.socials a {
+  text-decoration: none;
+  
+}
+.socials a:hover {
+  color: #FF1493;
 }
 
 .FBusinessid {

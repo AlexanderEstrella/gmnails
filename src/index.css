@@ -7,7 +7,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #eef2f5;
 }
 
 code {
@@ -17,16 +16,29 @@ code {
 /* Nav edits  */
 .nav-container {
   display: flex;
-  background-color: #f2f2f2;
+  position: fixed;
+  background-color: #f0e6e3;
   font-style: italic;
   height: 70px;
   align-items: center;
   justify-content: space-around;
+  z-index: 5;
+  width: 100%;
+ 
 }
 
+.nav-container a {
+  text-decoration: none;
+    cursor: pointer;
+}
+.nav-container a:hover {
+  color: #ef9273
+}
 .nav-title h1 {
   display: block;
   font-size: 1.5em;
+  font-weight: 400;
+
 }
 .nav-body {
   display: flex;
@@ -51,13 +63,13 @@ display: none;
 
 .Home-control {
   width: auto;
-  background-color: white;
+  background-color: #f0e6e3;
   justify-content: center;
   text-align: center;
   flex-direction: column;
   display: flex;
-  margin: auto;
-  margin-top: 20px;
+  margin: 0 auto;
+  padding:2em;
 }
 
 .carousel {
@@ -76,6 +88,8 @@ display: none;
 .Welcome {
   height: 80px;
   margin: 0 auto;
+  font-weight: lighter;
+  color: #151B54;
 }
 
 .BusinessOP {
@@ -97,6 +111,8 @@ a {
   width: 200px;
   bottom: 40px;
   font-size: 15px;
+  font-style: italic;
+  font-weight: lighter;
 }
 
 img {
@@ -108,7 +124,7 @@ img {
   position: relative;
   border: 1px solid;
   width: 25%;
-  color: #f2f2f1;
+  background-color: #F0DED0;
   margin: auto;
   bottom: 40px;
 }
@@ -117,6 +133,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #F0DED0;
 }
 
 .Form-Container form {
@@ -128,6 +145,7 @@ img {
   display: flex;
   margin: auto;
   margin-top: 20px;
+  background-color: #ef9273;
 }
 
 iframe {
@@ -149,7 +167,20 @@ iframe {
   gap: 5px;
   font-style: italic;
 }
+.socials {
+  display: flex;
+  gap:20px;
+  font-size: 1.3em;
+}
 
+.FBusinessid {
+  font-weight: 400;
+color: rgb(108,74,50);
+}
+.Fbusinessct {
+  font-weight: 400;
+color: rgb(108,74,50);
+}
 /* ABout me */
 .aboutmeContainer {
   display: flex;
@@ -162,6 +193,11 @@ iframe {
   flex-direction: column;
   width: 400px;
   height: 200px;
+}
+
+.Abouttitle {
+font-weight: 300;
+color: rgb(108,74,50);
 }
 /* Servies */
 .Pricing-table {
@@ -186,6 +222,16 @@ iframe {
   display: unset;
 }
 
+/* footer rights */ 
+.footerrights {
+  padding-top: 2%;
+  background-color: black;
+  text-align: center;
+ margin:auto;
+ 
+ background-color: #f0e6e3;
+  
+}
 
 @media screen and (max-width: 600px) {
 /* Nav */
@@ -237,4 +283,11 @@ iframe {
     margin: auto;
     flex-direction: column;
   }
+}
+
+/* footer */
+
+.businessP {
+ position: relative;;
+ width: 200px;
 }

@@ -1,7 +1,14 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useForm } from "react-hook-form";
 
 function ContactComponent() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (values) => alert(JSON.stringify(values, null, 2));
   const [unset, setUnset] = useState(true);
   const form = useRef();
   const sendEmail = (e) => {
@@ -26,7 +33,7 @@ function ContactComponent() {
   };
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <h2>Contact us</h2>
+      <h2 className="Fbusinessct">Contact us</h2>
       <div className="form-label">
         <label className="Name-field" htmlFor="name">
           Name
@@ -39,8 +46,12 @@ function ContactComponent() {
           className="form-control"
           name="user_email"
           type="email"
-          required
+          {...register("email", {
+            required: true,
+            pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+          })}
         />
+        {errors.email && <span>Invalid email</span>}
       </div>
       <div className="form-label">
         <label className="Message-label">Message</label>

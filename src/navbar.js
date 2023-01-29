@@ -8,14 +8,16 @@ const Navbar = () => {
   return (
     <nav className="nav-container">
       <nav className="nav-title">
-        <h1>GM Nails</h1>
+        <h1>
+          <Link to="/">GM Nails</Link>
+        </h1>
       </nav>
       <nav className="nav-body">
         <div className="Nav-item">
           <Link to="/">Home</Link>
         </div>
         <div className="Nav-item">
-          <Link to="/about">About Us</Link>
+          <Link to="/about">About Me</Link>
         </div>
         <div className="Nav-item">
           <Link to="/services">Services</Link>

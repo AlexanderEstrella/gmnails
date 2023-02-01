@@ -273,11 +273,8 @@ color: rgb(108,74,50);
     display: none;
     visibility: hidden;
   }
-.carousel button {
-  display: none;
-    visibility: hidden;
-}
-    .Welcome {
+
+.Welcome {
       height: 100px;
       margin: 0 auto;
       font-weight: lighter;
@@ -317,4 +314,14 @@ color: rgb(108,74,50);
 .businessP {
  position: relative;;
  width: 200px;
+}
+
+
+@media screen and (max-width: 400px) { 
+
+.Welcome {
+  font-size: 1.7em;
+}
+
+
 }

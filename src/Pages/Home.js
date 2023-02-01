@@ -18,6 +18,7 @@ const Home = () => {
       <br></br>
       <p className="BusinessAD">7335 W Sand Lake Rd, Orlando, FL 32819</p>
       <hr className="divider"></hr>
+      <h2> Gallery : </h2>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {DATA.map((img, index) => {
           return (

@@ -263,12 +263,12 @@ color: rgb(108,74,50);
 
   .carousel {
     margin: 0 auto;
-    width: 200px;
+    width: 300px;
     height: 500px;
   }
 
-  .Caurosel.item {
-    width: auto;
+  .carousel-indicators {
+    width: 200px;
   }
 
     .Welcome {

@@ -269,8 +269,14 @@ color: rgb(108,74,50);
 
   .carousel-indicators {
     width: 200px;
+    font-size: 1em;
+    display: none;
+    visibility: hidden;
   }
-
+.carousel button {
+  display: none;
+    visibility: hidden;
+}
     .Welcome {
       height: 100px;
       margin: 0 auto;

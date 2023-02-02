@@ -63,7 +63,7 @@ display: none;
 
 .Home-control {
   width: auto;
-  background-color: #f0e6e3;
+  background-color: #fcf4f438;
   justify-content: center;
   text-align: center;
   flex-direction: column;
@@ -260,6 +260,9 @@ color: rgb(108,74,50);
     padding: 100px;
     gap: 40px;
   }
+  .Home-control {
+    position: sticky;
+  }
 
   .carousel {
     margin: 0 auto;
@@ -285,21 +288,21 @@ color: rgb(108,74,50);
     /* About Us */
   .aboutmeContainer {
     margin: 0 auto;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     flex-wrap: wrap;
-    height: 100em;
-    justify-content: center;
-    gap: 40em;
+    
   }
 
   .aboutmeparagraph {
-    display: unset;
-    width: none;
+height: 100%;
+    width: 100%;
+    
   }
   img {
     display: block;
-    width: 300px;
-    top: 200px;
+    width: 100%;
+    height: 100%;
   }
 /* Services */
   .Pricing-table {

@@ -18,11 +18,10 @@ const Home = () => {
       <br></br>
       <p className="BusinessAD">7335 W Sand Lake Rd, Orlando, FL 32819</p>
       <hr className="divider"></hr>
-      <h2> Gallery : </h2>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {DATA.map((img, index) => {
           return (
-            <Carousel.Item key={DATA.id}>
+            <Carousel.Item key={DATA.id} onClick={() => window.open(img.img)}>
               <img className="d-block w-100" src={img.img} alt="First slide" />
             </Carousel.Item>
           );

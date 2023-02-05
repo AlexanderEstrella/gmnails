@@ -252,7 +252,9 @@ iframe {
   }
 
   .Home-control {
+    margin: 0 auto;
     position: sticky;
+    text-align: center;
   }
 
   .carousel {
@@ -299,7 +301,7 @@ iframe {
 
   /* Services */
   .Pricing-table {
-    margin: auto;
+    margin: 0 auto;
     flex-direction: column;
     padding-top: 15%;
   }

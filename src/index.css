@@ -15,6 +15,13 @@ code {
 }
 
 /* Nav edits  */
+.navbar {
+  position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
 
 .navbar a {
   text-decoration: none;

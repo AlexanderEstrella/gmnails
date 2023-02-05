@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "bootstrap";
 import Map from "./API/googlemap";
 import ContactComponent from "./Contact/ContactComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -8,14 +8,11 @@ function ContactComponent() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (values) => alert(JSON.stringify(values, null, 2));
   const [unset, setUnset] = useState(true);
+
   const form = useRef();
-  let array = [];
-  console.log(array);
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_tar0h7j",
@@ -23,16 +20,18 @@ function ContactComponent() {
         form.current,
         "X9FZgsDJSow5wxOmd"
       )
-      .then(
-        (result) => {
-          array.push(result);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      .then((result) => {
+        console.log(result.status);
+      })
+      .catch((err) => {
+        alert("error");
+      })
+      .finally(() => {
+        setUnset(!unset);
+      });
     e.target.reset();
   };
+
   return (
     <form ref={form} onSubmit={sendEmail}>
       <h2 className="Fbusinessct">Contact us</h2>
@@ -59,11 +58,7 @@ function ContactComponent() {
         <label className="Message-label">Message</label>
         <textarea className="form-control" name="user_name" required />
       </div>
-      <button
-        className="btn btn-primary"
-        type="submit"
-        onClick={() => setUnset(!unset)}
-      >
+      <button className="btn btn-primary" type="submit">
         Send
       </button>
       <div className={unset ? "Contactusmessage" : "Contactusvisible"}>

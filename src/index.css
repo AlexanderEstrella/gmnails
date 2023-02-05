@@ -13,51 +13,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 /* Nav edits  */
-.nav-container {
-  display: flex;
-  position: fixed;
-  background-color: #FFFFFF;
-  font-style: italic;
-  height: 70px;
-  align-items: center;
-  justify-content: space-around;
-  z-index: 5;
-  width: 100%;
- 
+
+.navbar a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.nav-container a {
-  text-decoration: none;
-    cursor: pointer;
-}
-.nav-container a:hover {
+.navbar a:hover {
   color: #FF1493;
 }
+
 .nav-title h1 {
   display: block;
   font-size: 1.5em;
   font-weight: 400;
 
 }
-.nav-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
-  gap: 20px;
+.navbar ul {
+  gap:40px;
 }
 
-.Nav-item {
-  display: flex;
-  font-weight: 400;
-  padding: 10px;
-  color: black;
-}
-
-.hamburger {
-display: none;
-}
 
 /* Home */
 
@@ -69,7 +46,7 @@ display: none;
   flex-direction: column;
   display: flex;
   margin: 0 auto;
-  padding:2em;
+  padding: 2em;
 }
 
 .carousel {
@@ -90,6 +67,7 @@ display: none;
   margin: 0 auto;
   font-weight: lighter;
   color: #151B54;
+  cursor: pointer;
 }
 
 .BusinessOP {
@@ -98,6 +76,7 @@ display: none;
   bottom: 30px;
   font-size: 13px;
   font-style: italic;
+  cursor: pointer;
 }
 
 a {
@@ -128,6 +107,7 @@ img {
   margin: auto;
   bottom: 40px;
 }
+
 /* Footer */
 .Form-Container {
   display: flex;
@@ -171,25 +151,29 @@ iframe {
 
 .socials {
   display: flex;
-    gap: 20px;
-    font-size: 1.3em;
+  gap: 20px;
+  font-size: 1.3em;
 }
+
 .socials a {
   text-decoration: none;
-  
+
 }
+
 .socials a:hover {
   color: #FF1493;
 }
 
 .FBusinessid {
   font-weight: 400;
-color: rgb(108,74,50);
+  color: rgb(108, 74, 50);
 }
+
 .Fbusinessct {
   font-weight: 400;
-color: rgb(108,74,50);
+  color: rgb(108, 74, 50);
 }
+
 /* ABout me */
 .aboutmeContainer {
   display: flex;
@@ -197,6 +181,7 @@ color: rgb(108,74,50);
   margin: auto;
   padding: 10vh;
 }
+
 .aboutmeparagraph {
   display: flex;
   flex-direction: column;
@@ -205,17 +190,19 @@ color: rgb(108,74,50);
 }
 
 .Abouttitle {
-font-weight: 300;
-color: rgb(108,74,50);
+  font-weight: 300;
+  color: rgb(108, 74, 50);
 }
+
 /* Servies */
 .Pricing-table {
   display: flex;
-  margin: auto;
-  flex-direction: row;
+  margin: 0 left;
+  flex-direction: column;
   justify-content: space-evenly;
   gap: 10px;
   margin: 200px;
+  text-align: left;
 }
 
 .Pricing-table li {
@@ -223,6 +210,7 @@ color: rgb(108,74,50);
   font-weight: 300;
   font-size: 20px;
 }
+
 .Contactusmessage {
   display: none;
 }
@@ -231,28 +219,30 @@ color: rgb(108,74,50);
   display: unset;
 }
 
-/* footer rights */ 
+/* footer rights */
 .footerrights {
   padding-top: 2%;
   background-color: black;
   text-align: center;
- margin:auto;
- background-color: #f0e6e3;
-  
+  margin: auto;
+  background-color: #f0e6e3;
+
 }
 
 @media screen and (max-width: 600px) {
-/* Nav */
-    .nav-items {
-      display: none;
-    }
+
+  /* Nav */
+  .nav-items {
+    display: none;
+  }
 
   .nav-body {
     font-size: 0.8em;
     justify-content: unsafe;
-  
+
   }
-    /* Home */
+
+  /* Home */
   .Form-Container {
     margin: 0 auto;
     display: flex;
@@ -260,6 +250,7 @@ color: rgb(108,74,50);
     padding: 100px;
     gap: 40px;
   }
+
   .Home-control {
     position: sticky;
   }
@@ -277,34 +268,36 @@ color: rgb(108,74,50);
     visibility: hidden;
   }
 
-.Welcome {
-      height: 100px;
-      margin: 0 auto;
-      font-weight: lighter;
-      color: #151B54;
-      font-size: 2.3em;
-    }
+  .Welcome {
+    height: 100px;
+    margin: 0 auto;
+    font-weight: lighter;
+    color: #151B54;
+    font-size: 2.3em;
+  }
 
-    /* About Us */
+  /* About Us */
   .aboutmeContainer {
     margin: 0 auto;
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
-    
+
   }
 
   .aboutmeparagraph {
-height: 100%;
+    height: 100%;
     width: 100%;
-    
+
   }
+
   img {
     display: block;
     width: 100%;
     height: 100%;
   }
-/* Services */
+
+  /* Services */
   .Pricing-table {
     margin: auto;
     flex-direction: column;
@@ -315,16 +308,17 @@ height: 100%;
 /* footer */
 
 .businessP {
- position: relative;;
- width: 200px;
+  position: relative;
+  ;
+  width: 200px;
 }
 
 
-@media screen and (max-width: 400px) { 
+@media screen and (max-width: 400px) {
 
-.Welcome {
-  font-size: 2em;
-}
+  .Welcome {
+    font-size: 2em;
+  }
 
 
 }

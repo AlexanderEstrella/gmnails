@@ -55,5 +55,9 @@ const DATA = [
     id: 14,
     img: "/images/img14.jpg",
   },
+  {
+    id: 15,
+    img: "/images/img15.jpg",
+  },
 ];
 export default DATA;

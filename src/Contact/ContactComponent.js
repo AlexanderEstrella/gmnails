@@ -11,6 +11,8 @@ function ContactComponent() {
   const onSubmit = (values) => alert(JSON.stringify(values, null, 2));
   const [unset, setUnset] = useState(true);
   const form = useRef();
+  let array = [];
+  console.log(array);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -23,7 +25,7 @@ function ContactComponent() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          array.push(result);
         },
         (error) => {
           console.log(error.text);
@@ -65,7 +67,7 @@ function ContactComponent() {
         Send
       </button>
       <div className={unset ? "Contactusmessage" : "Contactusvisible"}>
-        <p>Your message has been sent!</p>
+        <p>Your message have been sent!</p>
       </div>
     </form>
   );

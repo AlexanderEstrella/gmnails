@@ -4,7 +4,7 @@ import { MarkerF } from "@react-google-maps/api";
 
 const Map = () => {
   const { isLoaded } = useJsApiLoader({
-    apiKey: process.env.REACT_APP_API_KEY,
+    apiKey: "AIzaSyAiEiTTftbCf6oEQqQkRlkcTKsNwYXMQzU",
   });
   // Business Location
   const center = useMemo(() => ({ lat: 28.45098, lng: -81.4806 }), []);

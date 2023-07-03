@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import DATA from "../assets/images";
-import Fade from "react-reveal/Fade";
+
 const Home = () => {
   const [index, setIndex] = useState(0);
   const handleSelect = (selectedIndex, e) => {
@@ -11,9 +11,8 @@ const Home = () => {
   return (
     <div className="Home-control">
       <div className="Frontdetails">
-        <Fade left>
-          <h1 className="Welcome">Welcome to GM Nails</h1>
-        </Fade>
+        <h1 className="Welcome">Welcome to GM Nails</h1>
+
         <p className="BusinessOP">
           Hours Operation: Monday-Friday 10:00AM - 7:00 PM
         </p>

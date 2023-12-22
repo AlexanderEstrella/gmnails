@@ -39,7 +39,7 @@ function ContactComponent() {
         <label className="Name-field" htmlFor="name">
           Name
         </label>
-        <input className="form-control" name="user_name" type="text" required />
+        <input className="form-control" name="user_name" type="text" placeholder="Enter your name" required />
       </div>
       <div className="form-label">
         <label className="Email-field">Email</label>
@@ -51,12 +51,13 @@ function ContactComponent() {
             required: true,
             pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
           })}
+          placeholder="Enter your email"
         />
         {errors.email && <span>Invalid email</span>}
       </div>
       <div className="form-label">
         <label className="Message-label">Message</label>
-        <textarea className="form-control" name="user_name" required />
+        <textarea className="form-control" name="user_name" placeholder="Type your message here" required />
       </div>
       <button className="btn btn-primary" type="submit">
         Send

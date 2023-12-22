@@ -2,9 +2,11 @@ import { React, useMemo } from "react";
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import { MarkerF } from "@react-google-maps/api";
 
+const REACT_APP_GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+
 const Map = () => {
   const { isLoaded } = useJsApiLoader({
-    apiKey: "AIzaSyAiEiTTftbCf6oEQqQkRlkcTKsNwYXMQzU",
+    apiKey: REACT_APP_GOOGLE_MAPS_API_KEY,
   });
   // Business Location
   const center = useMemo(() => ({ lat: 28.45098, lng: -81.4806 }), []);

@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="Form-Container">
       <ul className="FbusinessCR">
         <li>
-          <h4 className="FBusinessid"> GM Nails</h4>
+          <h3 className="FBusinessid"> GM Nails</h3>
         </li>
         <li>7335 West Sand Lake Rd</li>
         <li>Orlando, FL 32819</li>

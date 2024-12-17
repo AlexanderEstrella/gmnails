@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 function ContactComponent() {
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm();
   const [unset, setUnset] = useState(true);

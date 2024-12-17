@@ -23,7 +23,7 @@ const About = () => {
       </div>
 
       <div className="aboutmeimage">
-        <img src="/images/image/img15.jpg" alt="person image"></img>
+      <img src="/images/image/img15.jpg" alt="Photo of Gicela Martinez, owner of GM Nails" />
       </div>
     </div>
   );

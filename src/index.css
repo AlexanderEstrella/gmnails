@@ -278,11 +278,25 @@ iframe {
   }
 
   .Welcome {
-    height: 100px;
-    margin: 0 auto;
-    font-weight: lighter;
-    color: #151B54;
-    font-size: 2.3em;
+    height: auto;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+  }
+
+  .BusinessOP {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .BusinessAD {
+    position: static;
+    margin-bottom: 20px;
+    width: auto;
+  }
+
+  .divider {
+    position: static;
+    margin-bottom: 20px;
   }
 
   /* About Us */
@@ -326,8 +340,12 @@ iframe {
 @media screen and (max-width: 400px) {
 
   .Welcome {
-    font-size: 2em;
+    font-size: 1.4em;
   }
 
+  .BusinessOP,
+  .BusinessAD {
+    font-size: 12px;
+  }
 
 }
